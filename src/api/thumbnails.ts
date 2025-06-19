@@ -3,8 +3,7 @@ import { respondWithJSON } from "./json";
 import { getVideo, updateVideo } from "../db/videos";
 import type { ApiConfig } from "../config";
 import type { BunRequest } from "bun";
-import { BadRequestError, NotFoundError, UserForbiddenError } from "./errors";
-import { arrayBuffer } from "stream/consumers";
+import { BadRequestError, UserForbiddenError } from "./errors";
 import path from "path";
 import { randomBytes } from "crypto";
 
